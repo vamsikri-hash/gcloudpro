@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<div class="gal-head">
+<h1 class="my-gal">My Photo Gallery</h1>
+<%= link_to 'Add New Photo', new_gallery_path,class:"new-photo" %>
+</div>
+
+    <div class="fit">
+    <% @galleries.each do |gallery| %>
+     <div>
+     <div class="img-cont">
+      <%= image_tag gallery.image, class: "basic-length" %>
+      <p class= "card-title good-des"><%= gallery.description%></p>
+
+     </div>
+      <div>
+
+
+        <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td> |
+        <td><%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+      </div>
+     </div>
+    <% end %>
+
+    </div>
+
+
+<br>

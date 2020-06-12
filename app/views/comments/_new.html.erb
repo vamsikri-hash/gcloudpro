@@ -1,0 +1,12 @@
+<div class="comm-form">
+<%= form_for([@blog_post, @blog_post.comments.build]) do |f| %>
+  <div class="form-group size">
+
+
+    <%= f.text_area :comment, class: "form-control", rows:2, placeholder: "leave a comment"%>
+    <br/>
+    <%= f.submit  "Comment", class: "btn btn-primary"%>
+  </div>
+<% end %>
+<p>You can use Markdown Styles for commenting.<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Sheet here!</a></p>
+</div>

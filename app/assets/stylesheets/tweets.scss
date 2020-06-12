@@ -1,0 +1,56 @@
+// Place all the styles related to the Tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.full-screen
+{
+  background-color: #f6f8fa;
+}
+.twitter-header
+{
+width: 100%;
+background-image: linear-gradient(135deg,#1da1f2,#981ceb);
+background-color: #1b95e0;
+height: 100px;
+margin-bottom: 20px;
+}
+
+.display-tweets
+{
+  width: 60%;
+  margin-left: 16%;
+}
+
+.twitter-header nav{
+
+  margin-left: 20px;
+  padding-top: 10px;
+}
+.twitter-header nav  a{
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.twitter-header nav a:hover
+{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.twitter-header h4
+{ margin-left: 35%;
+  font-size: 40px;
+  padding-top: 18px;
+  color: white;}
+
+.follow-me
+{
+  float:right;
+}
+.follow-me a{
+    font-size: 30px;
+    color: white;
+    margin-right: 30px;
+}

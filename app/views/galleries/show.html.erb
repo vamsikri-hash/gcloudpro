@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+ <div class="images-content">
+ <%= image_tag @gallery.image, class: "basic-length"%>
+ <%= @gallery.description%>
+ </div>
+<%= link_to 'Edit', edit_gallery_path(@gallery) %> |
+<%= link_to 'Back', galleries_path %>
